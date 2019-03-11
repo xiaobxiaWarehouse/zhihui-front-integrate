@@ -1,0 +1,357 @@
+[
+  {
+    "id": 1,
+    "icon": "dashboard",
+    "name": "首页",
+    "label": "首页",
+    "intl": "Menu.adminManage",
+    "path": "/index",
+    "url": "/index",
+    "code": ["sys:dashboard:dir:manage"],
+    "sideMenu": true,
+    "children": []
+  },
+  {
+    "id": 2,
+    "icon": "group",
+    "name": "集团/机构管理",
+    "label": "集团/机构管理",
+    "intl": "Menu.adminManage",
+    "path": "/group/list",
+    "url": "/group/list",
+    "code": ["sys:jigou:view"],
+    "sideMenu": true,
+    "children": [
+      {
+        "id": 2,
+        "children": [],
+        "name": "新建集团/机构",
+        "label": "集团/机构管理 / 新建集团/机构",
+        "intl": "Menu.admin",
+        "path": "/group/addjigou",
+        "url": "/group/addjigou",
+        "code": ["sys:jigou:view"],
+        "sideMenu": false
+      },
+      {
+        "id": 2,
+        "children": [],
+        "name": "集团/机构详情",
+        "label": "集团/机构管理 / 集团/机构详情",
+        "intl": "Menu.admin",
+        "path": "/group/details",
+        "url": "/group/details",
+        "code": ["sys:jigou:view"],
+        "sideMenu": false
+      },
+      {
+        "id": 2,
+        "children": [],
+        "name": "集团/机构编辑",
+        "label": "集团/机构管理 / 集团/机构编辑",
+        "intl": "Menu.admin",
+        "path": "/group/edit",
+        "url": "/group/edit",
+        "code": ["sys:jigou:view"],
+        "sideMenu": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "icon": "monitor",
+    "name": "监测数据管理",
+    "label": "监测数据管理",
+    "intl": "Menu.adminManage",
+    "path": "/monitor",
+    "url": "/monitor",
+    "code": ["sys:shuju:view", "sys:yichang:view"],
+    "sideMenu": true,
+    "children": [
+      {
+        "id": 4,
+        "children": [],
+        "name": "智能床监测数据",
+        "label": "智能床监测数据",
+        "intl": "Menu.admin",
+        "path": "/monitorZnc/list",
+        "url": "/monitorZnc/list",
+        "code": ["sys:shuju:view"],
+        "sideMenu": true
+      },
+      {
+        "id": 5,
+        "children": [],
+        "name": "智能床垫监测数据",
+        "label": "智能床垫监测数据",
+        "intl": "Menu.admin",
+        "path": "/monitorZncd/list",
+        "url": "/monitorZncd/list",
+        "code": ["sys:shuju:view"],
+        "sideMenu": true
+      },
+      {
+        "id": 6,
+        "children": [],
+        "name": "多体征设备监测数据",
+        "label": "多体征设备监测数据",
+        "intl": "Menu.admin",
+        "path": "/monitorDtz/list",
+        "url": "/monitorDtz/list",
+        "code": ["sys:shuju:view"],
+        "sideMenu": true
+      },
+      {
+        "id": 31,
+        "children": [],
+        "name": "智汇鞋监测数据",
+        "label": "智汇鞋监测数据",
+        "intl": "Menu.admin",
+        "path": "/monitorZhx/list",
+        "url": "/monitorZhx/list",
+        "code": ["sys:shuju:view"],
+        "sideMenu": true
+      },
+      {
+        "id": 9,
+        "name": "设备告警数据",
+        "label": "设备告警数据",
+        "intl": "Menu.adminManage",
+        "path": "/abnormal/list",
+        "url": "/abnormal/list",
+        "code": ["sys:yichang:view"],
+        "sideMenu": true,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "icon": "dangan",
+    "name": "健康档案管理",
+    "label": "健康档案管理",
+    "intl": "Menu.adminManage",
+    "path": "/dangan/list",
+    "url": "/dangan/list",
+    "code": ["sys:dangan:view"],
+    "sideMenu": true,
+    "children": [
+      {
+        "id": 7,
+        "children": [],
+        "name": "健康档案详情",
+        "label": "健康档案管理 / 人员详情",
+        "intl": "Menu.admin",
+        "path": "/dangan/detail",
+        "url": "/dangan/detail",
+        "code": ["sys:dangan:view"],
+        "sideMenu": false
+      },
+      {
+        "id": 7,
+        "children": [],
+        "name": "数据详情",
+        "label": "健康档案管理 / 人员详情 / 数据详情",
+        "intl": "Menu.admin",
+        "path": "/dangan/dataDetail",
+        "url": "/dangan/dataDetail",
+        "code": ["sys:dangan:view"],
+        "sideMenu": false
+      },
+      {
+        "id": 7,
+        "children": [],
+        "name": "健康档案",
+        "label": "健康档案管理 / 文档数据",
+        "intl": "Menu.admin",
+        "path": "/dangan/jiankang",
+        "url": "/dangan/jiankang",
+        "code": ["sys:dangan:view"],
+        "sideMenu": false
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "icon": "shebei",
+    "name": "设备管理",
+    "label": "设备管理",
+    "intl": "Menu.adminManage",
+    "path": "/shebei/list",
+    "url": "/shebei/list",
+    "code": ["sys:shebei:view"],
+    "sideMenu": true,
+    "children": [
+      {
+        "id": 8,
+        "children": [],
+        "name": "实时数据",
+        "label": "设备管理 / 实时数据",
+        "intl": "Menu.admin",
+        "path": "/shebei/realtime",
+        "url": "/shebei/realtime",
+        "code": ["sys:shebei:view"],
+        "sideMenu": false
+      },
+      {
+        "id": 8,
+        "children": [],
+        "name": "绑定数据",
+        "label": "设备管理 / 绑定记录",
+        "intl": "Menu.admin",
+        "path": "/shebei/bangding",
+        "url": "/shebei/bangding",
+        "code": ["sys:shebei:view"],
+        "sideMenu": false
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "icon": "tixing",
+    "name": "提醒管理",
+    "label": "提醒管理",
+    "intl": "Menu.adminManage",
+    "path": "/tixing/list",
+    "url": "/tixing/list",
+    "code": ["sys:shebei:view"],
+    "sideMenu": true,
+    "children": []
+  },
+  {
+    "id": 10,
+    "icon": "caiji",
+    "name": "数据采集监测",
+    "label": "数据采集监测",
+    "intl": "Menu.adminManage",
+    "path": "/caiji",
+    "url": "/caiji",
+    "code": ["sys:shuju:view"],
+    "sideMenu": true,
+    "children": [
+      {
+        "id": 11,
+        "children": [],
+        "name": "设备采集统计",
+        "label": "设备采集统计",
+        "intl": "Menu.admin",
+        "path": "/caijiSb/list",
+        "url": "/caijiSb/list",
+        "code": ["sys:shuju:view"],
+        "sideMenu": true
+      },
+      {
+        "id": 12,
+        "children": [],
+        "name": "机构设备统计",
+        "label": "机构设备统计",
+        "intl": "Menu.admin",
+        "path": "/caijiJg/list",
+        "url": "/caijiJg/list",
+        "code": ["sys:shuju:view"],
+        "sideMenu": true
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "icon": "xitong",
+    "name": "系统设置",
+    "label": "系统设置",
+    "intl": "Menu.adminManage",
+    "path": "/xitong",
+    "url": "/xitong",
+    "code": ["sys:role:view", "sys:user:view"],
+    "sideMenu": true,
+    "children": [
+      {
+        "id": 14,
+        "children": [],
+        "name": "角色管理",
+        "label": "角色管理",
+        "intl": "Menu.admin",
+        "path": "/role/list",
+        "url": "/role/list",
+        "code": ["sys:role:view"],
+        "sideMenu": true
+      },
+      {
+        "id": 14,
+        "children": [],
+        "name": "新增角色",
+        "label": "角色管理 / 新建角色",
+        "intl": "Menu.admin",
+        "path": "/role/add",
+        "url": "/role/add",
+        "code": ["sys:role:view"],
+        "sideMenu": false
+      },
+      {
+        "id": 14,
+        "children": [],
+        "name": "角色详情",
+        "label": "角色管理 / 角色详情",
+        "intl": "Menu.admin",
+        "path": "/role/detail",
+        "url": "/role/detail",
+        "code": ["sys:role:view"],
+        "sideMenu": false
+      },
+      {
+        "id": 14,
+        "children": [],
+        "name": "编辑角色",
+        "label": "角色管理 / 角色详情 / 编辑角色",
+        "intl": "Menu.admin",
+        "path": "/role/edit",
+        "url": "/role/edit",
+        "code": ["sys:role:view"],
+        "sideMenu": false
+      },
+      {
+        "id": 15,
+        "children": [],
+        "name": "用户管理",
+        "label": "用户管理",
+        "intl": "Menu.admin",
+        "path": "/user/list",
+        "url": "/user/list",
+        "code": ["sys:user:view"],
+        "sideMenu": true
+      },
+      {
+        "id": 15,
+        "children": [],
+        "name": "新增用户",
+        "label": "用户管理 / 新建用户",
+        "intl": "Menu.admin",
+        "path": "/user/add",
+        "url": "/user/add",
+        "code": ["sys:user:view"],
+        "sideMenu": false
+      },
+      {
+        "id": 15,
+        "children": [],
+        "name": "用户详情",
+        "label": "用户管理 / 用户详情",
+        "intl": "Menu.admin",
+        "path": "/user/detail",
+        "url": "/user/detail",
+        "code": ["sys:user:view"],
+        "sideMenu": false
+      },
+      {
+        "id": 15,
+        "children": [],
+        "name": "编辑用户",
+        "label": "用户管理 / 用户详情 / 编辑用户",
+        "intl": "Menu.admin",
+        "path": "/user/edit",
+        "url": "/user/edit",
+        "code": ["sys:user:view"],
+        "sideMenu": false
+      }
+    ]
+  }
+]
